@@ -1,0 +1,187 @@
+/* Reset some default styles for better cross-browser consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000;
+    min-height: 100vh; /* Minimum height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Add this to your existing CSS styles */
+header a {
+    color: #000; /* Set the text color when not hovered */
+    text-decoration: none; /* Remove the underline */
+    font-weight: lighter;
+    font-size: 60pt;
+    
+}
+
+header a:hover {
+    color: #333;
+}
+
+
+/* Header styles */
+header {
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Navigation styles */
+nav {
+    background-color: #f4f4f4;
+    text-align: center; /* Center the navigation items */
+    border: 1px solid #000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center; /* Center the list items */
+}
+
+nav li {
+    display: block; /* Display the list item as a block element */
+    margin-bottom: 10px; /* Add space between each navigation item */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight:lighter;
+    display: block; /* Display the links as block elements to take full width */
+    font-size: 20pt;
+}
+
+nav a:hover{
+    color: #333;
+
+}
+
+
+h2{
+font-weight: 100;
+}
+
+h4{
+    font-weight: 100;
+    }
+
+
+/* Footer styles */
+footer {
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+    font-size: 8pt;
+    border: 1px solid #000;
+
+}
+
+.content-box{
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* Content container styles */
+.container {
+    flex: 1; /* Allow the container to take the remaining space */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 400px; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    margin: 0 auto; /* Center the image horizontally */
+
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40pt;
+    cursor: pointer;
+    color: #333;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+  
